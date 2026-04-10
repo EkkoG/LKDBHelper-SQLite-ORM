@@ -10,6 +10,10 @@
 #import <sqlite3.h>
 #import <pthread/pthread.h>
 
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
+#import <UIKit/UIKit.h>
+#endif
+
 #ifndef SQLITE_OPEN_FILEPROTECTION_NONE
 #define SQLITE_OPEN_FILEPROTECTION_NONE 0x00400000
 #endif
